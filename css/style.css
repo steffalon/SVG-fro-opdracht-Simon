@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+  font-family: sans-serif;
+  margin: 1em; }
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em; }
+  .content__vak {
+    position: relative;
+    stroke-width: 15px;
+    box-sizing: border-box;
+    padding: 0.2em 1em;
+    background-color: lightgray; }
+  .content__vak:hover {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 5s linear forwards; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+/*# sourceMappingURL=style.css.map */
